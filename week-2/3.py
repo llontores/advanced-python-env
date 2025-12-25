@@ -10,6 +10,6 @@ if a == 'x':
 elif b == 'x':
     if op == '+': print(int(c) - int(a))
     else: print(int(a) - int(c))
-else: # c == 'x'
+else: 
     if op == '+': print(int(a) + int(b))
     else: print(int(a) - int(b))
