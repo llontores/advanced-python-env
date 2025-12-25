@@ -1,6 +1,8 @@
-def all_eq(lst):
-    if not lst: return []
-    
+lst = ["a", "abcd", "ab"]
+
+if not lst: 
+    print([]) 
+else:
     max_val = 0
     for s in lst:
         if len(s) > max_val:
@@ -8,7 +10,9 @@ def all_eq(lst):
             
     res = []
     for s in lst:
-        while len(s) < max_val:
-            s += "_"
-        res.append(s)
-    return res
+        new_s = s
+        while len(new_s) < max_val:
+            new_s += "_"
+        res.append(new_s)
+    
+    print(res)
